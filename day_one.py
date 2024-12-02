@@ -1,6 +1,9 @@
 # Day 1: Advent of Code 2024
 # https://adventofcode.com/2024/day/1
 
+# Imports
+from collections import Counter
+
 # Input format:
 # Text file with numerical values separated by a space (i.e.)
 # Each line corresponds to a pair to be compared
@@ -23,3 +26,13 @@ l2.sort()
 
 # Calculate abs diff between List1[x] to List2[x] & sum those values
 print(sum([abs(ai - bi) for ai, bi in zip(l1, l2)]))
+
+
+# Part 2
+count = Counter(l2)
+
+sum = 0
+for num in l1:
+    sum += count[num] * num
+
+print (sum)
