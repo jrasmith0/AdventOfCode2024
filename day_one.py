@@ -1,6 +1,12 @@
 # Day 1: Advent of Code 2024
 # https://adventofcode.com/2024/day/1
 
+# Input format:
+# Text file with numerical values separated by a space (i.e.)
+# Each line corresponds to a pair to be compared
+# 3 4
+# 2 3
+
 l1 = []
 l2 = []
 
