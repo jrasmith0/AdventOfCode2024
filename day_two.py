@@ -61,5 +61,8 @@ for line in file:
     safeReports += inspectSafety(report)
     safeReportsWithDampener += inspectSafetyWithDampener(report)
 
+#Close file read
+file.close()
+
 print(safeReports)
 print(safeReportsWithDampener)

@@ -20,6 +20,9 @@ for line in file:
     l1.append(int(tmp[0]))
     l2.append(int(tmp[1]))
 
+#Close file read
+file.close()
+
 # Sort Lists to be able to compare min values against eachother
 l1.sort()
 l2.sort()
@@ -34,5 +37,7 @@ count = Counter(l2)
 sum = 0
 for num in l1:
     sum += count[num] * num
+
+
 
 print (sum)
